@@ -25,11 +25,14 @@ const getAccessToken = async () => {
     client_id: clientId,
     client_secret: clientSecret,
     grant_type: 'client_credentials',
+    scope: 'api.fleet',
   };
 
   try {
     const response = await axios.post(tokenUrl, params);
     const { access_token } = response.data;
+    
+    console.log(access_token);
     return access_token;
   } catch (error) {
     console.error('Error al obtener el token de acceso:', error.message);
