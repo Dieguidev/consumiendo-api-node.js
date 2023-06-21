@@ -14,8 +14,8 @@
 
 const axios = require('axios');
 
-const clientId = 'pikango';
-const clientSecret = '6UGoAJtXa4Kwo0Sa6ZAZhx0zZy0JBcnLEs04Fjsb2DBJfTn7uUNYdH9JSaVaA1j';
+const clientId = '';
+const clientSecret = '';
 const apiUrl = 'https://cloud.securitasfleet.com/api-fleet/v2/trackables';
 
 // Función para obtener el token de acceso
